@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LocationLogger</title>
+
+    <!-- LocationLogger 参照 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>LocationLogger</h1>
+    <dl>
+        <dt>Date:</dt><dd id="date"></dd>
+        <dt>Latitude:</dt><dd id="latitude"></dd>
+        <dt>Longitude:</dt><dd id="longitude"></dd>
+        <dt>Status:</dt><dd id="status"></dd>
+    </dl>
+    <div style="margin-bottom:20px;">
+        間隔：
+        <select id="interval" style="width:100px;">
+            <option value="0">指定なし</option>
+            <option value="15">15秒</option>
+            <option value="30">30秒</option>
+            <option value="60">60秒</option>
+        </select>
+    </div>
+    <input type="button" value="記録開始" id="startBtn" style="width:100px;height:50px;"/>
+    <input type="button" value="記録停止" id="stopBtn" style="width:100px;height:50px;"/>
+
+    <p><a id="download" target="_blank"></a></p>
+</body>
+</html>
